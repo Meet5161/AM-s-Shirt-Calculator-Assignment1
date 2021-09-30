@@ -44,4 +44,18 @@ elif type_of_shirt == 2:
 else:
     print (" Choose 1 or 2 ")
 
+quantity = int(input(" \n how many shirts you want "))
+
+cost_without_HST = float(quantity * 9.99)
+print (" \n Cost without HST is below ")
+print (cost_without_HST)
+
+HST = float (cost_without_HST*0.13)
+print (" \n your HST(Tax) is below ")
+print(HST)
+
+total_cost = float ( cost_without_HST + HST )
+print ("\n your total bill amount is ") 
+print(total_cost)
+
 
